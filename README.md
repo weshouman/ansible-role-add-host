@@ -3,6 +3,10 @@ Role Name
 
 Add given hosts to hostfile.
 
+Status
+------
+[![Build Status](https://travis-ci.org/weshouman/ansible-role-add-host.svg?branch=master)](https://travis-ci.org/weshouman/ansible-role-add-host)
+
 Requirements
 ------------
 
