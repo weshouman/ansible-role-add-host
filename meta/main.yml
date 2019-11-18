@@ -1,5 +1,6 @@
 galaxy_info:
   author: Walid Shouman
+  role_name: add-host
   description: Ansible role to add hosts to /etc/hosts
   company: Voxelvention
 
