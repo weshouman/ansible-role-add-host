@@ -1,0 +1,15 @@
+---
+# lineinfile with regexp will override, which isn't desired
+- name: Check if host is defined for {{ address }}
+  shell: grep '^{{ address | regex_escape() }}' {{ hosts_file }}
+  register: host_reg
+  # grep returns 1 for not finding, and 2 for errors
+  failed_when: "host_reg.rc == 2"
+
+- name: Add host if not found
+  lineinfile:
+    path: '{{ hosts_file }}'
+    line: "{{ address }}\t{{ hostname }}"
+  become: true
+  when: host_reg.stdout == ""
+
