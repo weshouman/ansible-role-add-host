@@ -13,8 +13,8 @@ This role doesn't work on docker containers (centos and ubuntu so far). Follow t
 Role Variables
 --------------
 
-hostname: the hostname to be added
-address: the hostname address
+```hostname```: the hostname to be added.  
+```address```: the hostname address.  
 
 Example Playbook
 ----------------
