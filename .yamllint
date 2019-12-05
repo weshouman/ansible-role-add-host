@@ -2,7 +2,7 @@
 # Based on ansible-lint config
 extends: default
 
-gnore: |
+ignore: |
   **/venv/
 
 rules:
